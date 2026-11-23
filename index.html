@@ -6,7 +6,7 @@
   <meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src 'self' data:; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; script-src 'self'; base-uri 'self'; form-action 'self'; object-src 'none';" />
   <meta name="referrer" content="strict-origin-when-cross-origin" />
   <title>Snip35 — Paper Collage Studio for iPhone</title>
-  <meta name="description" content="Real paper. Real scissors. Zero generative AI. Hand-cut glossy modern spreads, vintage posters, and your own pages into Pop Art, Torn Edge &amp; Ripped Up collages live on iPhone." />
+  <meta name="description" content="Cut your photos from real print. Hand-torn magazine collage art on iPhone—in seconds, 100% on-device, zero generative AI." />
   <link rel="canonical" href="https://snip35.com/" />
 
   <!-- Apple Smart App Banner: uncomment once Apple approves v1.0 (Apple ID 6837796017) -->
@@ -20,8 +20,8 @@
   <!-- Open Graph & iMessage Rich Link Preview -->
   <meta property="og:type" content="website" />
   <meta property="og:site_name" content="Snip35" />
-  <meta property="og:title" content="Snip35 — Real paper. Real scissors. Zero AI art." />
-  <meta property="og:description" content="Hand-cut glossy modern spreads, museum lithographs, and your own pages into tactile collages live on iPhone. 100% on-device. Zero generative AI." />
+  <meta property="og:title" content="Snip35 — Cut your photos from real print." />
+  <meta property="og:description" content="Hand-torn magazine collage art live on iPhone from real glossy spreads and archival print. 100% on-device, zero generative AI." />
   <meta property="og:url" content="https://snip35.com/" />
   <meta property="og:image" content="https://snip35.com/assets/og-card.jpg" />
   <meta property="og:image:width" content="1200" />
@@ -63,27 +63,67 @@
 
       <div class="nav-actions">
         <button id="themeToggle" class="theme-btn" type="button" aria-label="Toggle studio theme"></button>
-        <a class="btn btn-primary btn-sm" href="#download">Get Snip35</a>
+        <a class="btn btn-primary btn-sm nav-cta" href="#download">Get Snip35</a>
       </div>
     </div>
   </header>
 
   <main>
-    <!-- Band 1: Hero -->
+    <!-- Band 1: Conversion-First Hero (Mobile: Copy -> Split Visual -> CTA; Desktop: 2-Col Flagship) -->
     <section class="wrap hero">
-      <div>
+      <div class="hero-copy">
         <div class="eyebrow">
           <span class="eyebrow-dot"></span>
           <span>Paper Collage Studio for iPhone</span>
         </div>
 
-        <h1>Real paper.<br />Real scissors.<br /><em>Zero AI art.</em></h1>
+        <h1>Cut your photos<br />from <em>real print.</em></h1>
 
         <p class="hero-lead">
-          Hand-cut glossy modern spreads, vintage lithographs, and your own photographed pages into
-          layered Pop Art, Torn Edge, and Ripped Up collages—rendered live on-device with Metal and zero generative AI.
+          Hand-torn magazine collage art on iPhone—in seconds, on-device, zero generative AI.
         </p>
+      </div>
 
+      <!-- Interactive Split Before/After Hero Stage -->
+      <div class="stage-wrap">
+        <div class="stage-card has-compare" id="heroStage" aria-label="Interactive before and after preview of Snip35 collage looks">
+          <img class="stage-img active" data-look="pop" src="./assets/hero-pop-portrait.jpg" alt="Snip35 Pop Art portrait collage hand-cut from real glossy editorial spreads" />
+          <img class="stage-img" data-look="diag" src="./assets/hero-diagonal.jpg" alt="Snip35 Diagonal Rip art frame revealing a 35mm portrait through torn print" />
+          <img class="stage-img" data-look="torn" src="./assets/hero-torn-edge.jpg" alt="Snip35 Torn Edge subject cutout with hand-torn paper deckle and cutout editorial lettering" />
+          <img class="stage-img" data-look="ripped" src="./assets/hero-ripped-up.jpg" alt="Snip35 Organic Ripped Up multi-shard collage framing a golden retriever" />
+
+          <img class="before-layer" id="beforeLayer" src="./assets/hero-torn-orig.jpg" alt="Original iPhone photograph before Snip35 paper cutting" />
+
+          <div class="stage-divider active" id="stageDivider" role="slider" tabindex="0" aria-label="Compare original photo and Snip35 collage" aria-valuemin="0" aria-valuemax="100" aria-valuenow="38">
+            <span class="stage-handle" aria-hidden="true">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M9 18l-6-6 6-6" />
+                <path d="M15 6l6 6-6 6" />
+              </svg>
+            </span>
+          </div>
+
+          <div class="stage-top-bar">
+            <span class="stage-tag visible" id="tagBefore">Original Photo</span>
+            <span class="stage-tag stage-tag-after visible" id="tagAfter">Pop Art</span>
+          </div>
+
+          <div class="stage-grad"></div>
+
+          <div class="stage-pills" role="tablist" aria-label="Choose hero look">
+            <button class="stage-pill active" type="button" role="tab" aria-selected="true" data-pick="pop">Pop Art</button>
+            <button class="stage-pill" type="button" role="tab" aria-selected="false" data-pick="diag">Diagonal</button>
+            <button class="stage-pill" type="button" role="tab" aria-selected="false" data-pick="torn">Torn Edge</button>
+            <button class="stage-pill" type="button" role="tab" aria-selected="false" data-pick="ripped">Ripped Up</button>
+          </div>
+        </div>
+        <div class="stage-caption">
+          <span>Drag to compare · Real engine output</span>
+          <span>18 spreads (up to 3K) · 60fps reels</span>
+        </div>
+      </div>
+
+      <div class="hero-action" id="heroCta">
         <div class="hero-cta">
           <a class="btn btn-primary" href="#download">
             <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
@@ -91,44 +131,21 @@
             </svg>
             <span>Get Snip35 for iPhone</span>
           </a>
-          <a class="btn btn-secondary" href="#studio">See Inside the Studio</a>
+          <a class="btn btn-secondary hero-secondary" href="#studio">See Inside the Studio</a>
         </div>
+
+        <p class="hero-trust">
+          <span>Free to try</span>
+          <i class="trust-sep" aria-hidden="true">·</i>
+          <span>Zero AI art</span>
+          <i class="trust-sep" aria-hidden="true">·</i>
+          <span>100% on-device</span>
+        </p>
 
         <div class="hero-specs">
-          <span><i class="spec-dot"></i>100% On-Device</span>
           <span><i class="spec-dot"></i>18 Spreads · Up to 3K</span>
           <span><i class="spec-dot"></i>4.8K Prints &amp; 60fps Reels</span>
-        </div>
-      </div>
-
-      <!-- Interactive Living Hero Stage -->
-      <div class="stage-wrap">
-        <div class="stage-card" id="heroStage" aria-label="Interactive preview of Snip35 collage looks">
-          <img class="stage-img active" data-look="pop" src="./assets/hero-pop-art.jpg" alt="Snip35 Pop Art mosaic collage made from real print scraps" />
-          <img class="stage-img" data-look="torn" src="./assets/hero-torn-edge.jpg" alt="Snip35 Torn Edge subject cutout with hand-torn paper deckle and editorial type strip" />
-          <img class="stage-img" data-look="diag" src="./assets/hero-diagonal.jpg" alt="Snip35 Diagonal Rip art frame revealing a 35mm photograph through torn print" />
-          <img class="stage-img" data-look="ripped" src="./assets/hero-ripped-up.jpg" alt="Snip35 Organic Ripped Up multi-shard collage framing a portrait" />
-
-          <img class="before-layer" id="beforeLayer" src="./assets/hero-pop-orig.jpg" alt="Original photograph before Snip35 cutting" />
-          <div class="stage-divider" id="stageDivider" aria-hidden="true"></div>
-
-          <div class="stage-top-bar">
-            <span class="stage-badge" id="stageBadge">01 · Pop Art</span>
-            <button class="compare-btn" id="compareBtn" type="button">Hold to Compare</button>
-          </div>
-
-          <div class="stage-grad"></div>
-
-          <div class="stage-pills" role="tablist" aria-label="Choose hero look">
-            <button class="stage-pill active" type="button" role="tab" aria-selected="true" data-pick="pop">Pop Art</button>
-            <button class="stage-pill" type="button" role="tab" aria-selected="false" data-pick="torn">Torn Edge</button>
-            <button class="stage-pill" type="button" role="tab" aria-selected="false" data-pick="diag">Diagonal</button>
-            <button class="stage-pill" type="button" role="tab" aria-selected="false" data-pick="ripped">Ripped Up</button>
-          </div>
-        </div>
-        <div class="stage-caption">
-          <span>Real engine output · Cut from real print</span>
-          <span id="stageHint">Tap any look · Hold to compare</span>
+          <span><i class="spec-dot"></i>Zero Generative AI</span>
         </div>
       </div>
     </section>
@@ -366,18 +383,37 @@
       />
       <div class="eyebrow">
         <span class="eyebrow-dot"></span>
-        <span>Built exclusively for iPhone · iOS 18+</span>
+        <span>In App Store Review · iPhone (iOS 18+)</span>
       </div>
-      <h2>Bring your photos.<br />We brought the scissors.</h2>
+      <h2>Bring your photos.<br />We brought the print.</h2>
       <p>
-        Submitted to the App Store for iOS 18+ with Metal GPU paper craft, on-device cutouts, and 18 hi-res print spreads.
+        Snip35 v1.0 has been submitted to the App Store. Free to download on launch—with Metal paper craft, 18 hi-res spreads, and zero account required.
       </p>
       <div class="closing-actions">
-        <a class="btn btn-primary" href="mailto:support@snip35.com?subject=Snip35%20App%20Store%20Launch">Get Launch Updates</a>
+        <a class="btn btn-primary" href="mailto:support@snip35.com?subject=Notify%20me%20when%20Snip35%20launches">Notify Me on Launch</a>
         <a class="btn btn-secondary" href="./support/">Support &amp; FAQ</a>
       </div>
     </section>
   </main>
+
+  <!-- Sticky Mobile Conversion Bar (shows only when hero CTA & closing CTA are off-screen) -->
+  <aside class="sticky-cta" id="stickyCta" aria-label="Get Snip35">
+    <div class="sticky-cta-brand">
+      <img
+        src="./assets/app-icon.png"
+        data-icon-light="./assets/app-icon.png"
+        data-icon-dark="./assets/app-icon-dark.png"
+        alt="Snip35 icon"
+        width="34"
+        height="34"
+      />
+      <div>
+        <strong>Snip35</strong>
+        <span>Free on iPhone</span>
+      </div>
+    </div>
+    <a class="btn btn-primary btn-sm" href="#download">Get Snip35</a>
+  </aside>
 
   <footer class="footer">
     <div class="wrap footer-inner">
