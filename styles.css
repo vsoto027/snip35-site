@@ -18,9 +18,9 @@ html[data-theme="light"] {
   --shadow-lg: 0 24px 60px rgba(18, 19, 22, 0.12), 0 4px 14px rgba(18, 19, 22, 0.06);
   --shadow-sm: 0 8px 24px rgba(18, 19, 22, 0.06);
   --glass: rgba(246, 245, 240, 0.86);
-  --display: "Bodoni Moda", "Bodoni 72", "Didot", Georgia, serif;
-  --sans: "DM Sans", -apple-system, BlinkMacSystemFont, "SF Pro Text", sans-serif;
-  --mono: "DM Mono", ui-monospace, "SF Mono", Menlo, monospace;
+  --display: "Instrument Serif", Georgia, serif;
+  --sans: "Inter", -apple-system, BlinkMacSystemFont, "SF Pro Text", sans-serif;
+  --mono: "IBM Plex Mono", ui-monospace, "SF Mono", Menlo, monospace;
   color-scheme: light;
 }
 
@@ -253,15 +253,15 @@ html[data-theme="dark"] .btn-secondary {
 
 .hero h1 {
   font-family: var(--display);
-  font-weight: 500;
-  font-size: clamp(44px, 5.4vw, 72px);
+  font-weight: 400;
+  font-size: clamp(54px, 6.4vw, 86px);
   line-height: 0.98;
-  letter-spacing: -0.03em;
+  letter-spacing: -0.02em;
   margin: 22px 0 20px;
 }
 
 .hero h1 em {
-  font-style: italic;
+  font-style: normal;
   color: var(--accent);
 }
 
@@ -482,10 +482,10 @@ html[data-theme="dark"] .btn-secondary {
 
 .section-head h2 {
   font-family: var(--display);
-  font-weight: 500;
-  font-size: clamp(34px, 4.4vw, 56px);
+  font-weight: 400;
+  font-size: clamp(40px, 4.8vw, 64px);
   line-height: 1.02;
-  letter-spacing: -0.03em;
+  letter-spacing: -0.015em;
   margin: 12px 0 0;
   max-width: 620px;
 }
@@ -550,9 +550,9 @@ html[data-theme="dark"] .btn-secondary {
 }
 
 .look-body h3 {
-  font-family: var(--display);
+  font-family: var(--sans);
   font-weight: 600;
-  font-size: 22px;
+  font-size: 18px;
   margin: 0 0 6px;
   letter-spacing: -0.02em;
 }
@@ -596,10 +596,11 @@ html[data-theme="dark"] .btn-secondary {
 }
 
 .craft-card h3 {
-  font-family: var(--display);
+  font-family: var(--sans);
   font-weight: 600;
-  font-size: 25px;
-  line-height: 1.15;
+  font-size: 20px;
+  line-height: 1.25;
+  letter-spacing: -0.02em;
   margin: 0 0 10px;
 }
 
@@ -625,9 +626,10 @@ html[data-theme="dark"] .btn-secondary {
 
 .privacy-band h2 {
   font-family: var(--display);
-  font-weight: 500;
-  font-size: clamp(30px, 3.8vw, 46px);
-  line-height: 1.06;
+  font-weight: 400;
+  font-size: clamp(36px, 4.2vw, 54px);
+  line-height: 1.04;
+  letter-spacing: -0.015em;
   margin: 12px 0 14px;
 }
 
@@ -695,9 +697,10 @@ html[data-theme="dark"] .btn-secondary {
 }
 
 .price-card h3 {
-  font-family: var(--display);
-  font-size: 28px;
+  font-family: var(--sans);
+  font-size: 21px;
   font-weight: 600;
+  letter-spacing: -0.02em;
   margin: 0;
 }
 
@@ -719,10 +722,11 @@ html[data-theme="dark"] .btn-secondary {
 }
 
 .price-amount strong {
-  font-family: var(--display);
-  font-size: 36px;
+  font-family: var(--sans);
+  font-size: 32px;
   color: var(--ink);
-  font-weight: 600;
+  font-weight: 700;
+  letter-spacing: -0.03em;
   margin-right: 4px;
 }
 
@@ -773,10 +777,10 @@ html[data-theme="dark"] .btn-secondary {
 
 .closing h2 {
   font-family: var(--display);
-  font-weight: 500;
-  font-size: clamp(38px, 5.5vw, 68px);
+  font-weight: 400;
+  font-size: clamp(44px, 5.8vw, 76px);
   line-height: 0.98;
-  letter-spacing: -0.035em;
+  letter-spacing: -0.02em;
   margin: 14px auto 18px;
   max-width: 740px;
 }
@@ -803,10 +807,10 @@ html[data-theme="dark"] .btn-secondary {
 
 .doc-header h1 {
   font-family: var(--display);
-  font-weight: 500;
-  font-size: clamp(36px, 5vw, 54px);
+  font-weight: 400;
+  font-size: clamp(42px, 5.4vw, 64px);
   line-height: 1.02;
-  letter-spacing: -0.03em;
+  letter-spacing: -0.015em;
   margin: 14px 0 12px;
 }
 
@@ -826,9 +830,10 @@ html[data-theme="dark"] .btn-secondary {
 }
 
 .doc-card h2 {
-  font-family: var(--display);
+  font-family: var(--sans);
   font-weight: 600;
-  font-size: 22px;
+  font-size: 18px;
+  letter-spacing: -0.02em;
   margin: 0 0 10px;
 }
 
