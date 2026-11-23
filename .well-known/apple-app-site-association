@@ -1,0 +1,22 @@
+{
+  "applinks": {
+    "details": [
+      {
+        "appIDs": [
+          "66255589F8.com.sculptcoat.snip35"
+        ],
+        "components": [
+          {
+            "/": "/open/*",
+            "comment": "Deep links that open Snip 35 directly on iPhone"
+          }
+        ]
+      }
+    ]
+  },
+  "webcredentials": {
+    "apps": [
+      "66255589F8.com.sculptcoat.snip35"
+    ]
+  }
+}
