@@ -118,9 +118,7 @@ button:focus-visible, a:focus-visible { outline: 2px solid var(--accent); outlin
   height: 22px;
   width: auto;
 }
-html[data-theme="dark"] .brand-wordmark {
-  filter: invert(1) brightness(1.06);
-}
+
 
 .nav {
   display: flex;
@@ -321,7 +319,7 @@ html[data-theme="dark"] .btn-primary {
 }
 
 .stage-card {
-  --focus-y: 42%;
+  --focus-y: 38%;
   position: relative;
   aspect-ratio: 3 / 4;
   border-radius: 28px;

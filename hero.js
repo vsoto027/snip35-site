@@ -1,9 +1,9 @@
 (() => {
   const looks = [
-    { id: "pop",    label: "Pop Art",   tag: "01 · Pop Art",   before: "./assets/hero-torn-orig.jpg", focusY: "42%", defaultSplit: 47 },
-    { id: "diag",   label: "Diagonal",  tag: "02 · Diagonal",  before: null,                          focusY: "40%", defaultSplit: 0  },
-    { id: "torn",   label: "Torn Edge", tag: "03 · Torn Edge", before: "./assets/hero-torn-orig.jpg", focusY: "25%", defaultSplit: 47 },
-    { id: "ripped", label: "Ripped Up", tag: "04 · Ripped Up", before: null,                          focusY: "34%", defaultSplit: 0  }
+    { id: "pop",    label: "Pop Art",   tag: "01 · Pop Art",   before: "./assets/hero-tulip-orig.jpg", focusY: "32%", defaultSplit: 47 },
+    { id: "diag",   label: "Diagonal",  tag: "02 · Diagonal",  before: null,                           focusY: "40%", defaultSplit: 0  },
+    { id: "torn",   label: "Torn Edge", tag: "03 · Torn Edge", before: "./assets/hero-torn-orig.jpg",  focusY: "28%", defaultSplit: 47 },
+    { id: "ripped", label: "Ripped Up", tag: "04 · Ripped Up", before: null,                           focusY: "34%", defaultSplit: 0  }
   ];
 
   let index = 0;

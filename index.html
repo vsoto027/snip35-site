@@ -5,9 +5,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src 'self' data:; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; script-src 'self'; base-uri 'self'; form-action 'self'; object-src 'none';" />
   <meta name="referrer" content="strict-origin-when-cross-origin" />
-  <title>Snip35 — Paper Collage Studio for iPhone</title>
+  <title>Frayge — Paper Collage Studio for iPhone</title>
   <meta name="description" content="Cut your photos from real print. Hand-torn magazine collage art on iPhone—in seconds, 100% on-device, zero generative AI." />
-  <link rel="canonical" href="https://snip35.com/" />
+  <link rel="canonical" href="https://frayge.com/" />
 
   <!-- Apple Smart App Banner: uncomment once Apple approves v1.0 (Apple ID 6837796017) -->
   <!-- <meta name="apple-itunes-app" content="app-id=6837796017" /> -->
@@ -19,17 +19,17 @@
 
   <!-- Open Graph & iMessage Rich Link Preview -->
   <meta property="og:type" content="website" />
-  <meta property="og:site_name" content="Snip35" />
-  <meta property="og:title" content="Snip35 — Cut your photos from real print." />
+  <meta property="og:site_name" content="Frayge" />
+  <meta property="og:title" content="Frayge — Cut your photos from real print." />
   <meta property="og:description" content="Hand-torn magazine collage art live on iPhone from real glossy spreads and archival print. 100% on-device, zero generative AI." />
-  <meta property="og:url" content="https://snip35.com/" />
-  <meta property="og:image" content="https://snip35.com/assets/og-card.jpg" />
+  <meta property="og:url" content="https://frayge.com/" />
+  <meta property="og:image" content="https://frayge.com/assets/og-card.jpg" />
   <meta property="og:image:width" content="1200" />
   <meta property="og:image:height" content="630" />
   <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="Snip35 — Paper Collage Studio for iPhone" />
+  <meta name="twitter:title" content="Frayge — Paper Collage Studio for iPhone" />
   <meta name="twitter:description" content="18 hi-res spreads (up to 3K), hand-torn edges, skin-locked Resnip, curved cutout type, and 60fps reels—100% on-device." />
-  <meta name="twitter:image" content="https://snip35.com/assets/og-card.jpg" />
+  <meta name="twitter:image" content="https://frayge.com/assets/og-card.jpg" />
 
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -40,17 +40,17 @@
 <body>
   <header class="topbar">
     <div class="wrap topbar-inner">
-      <a class="brand" href="./" aria-label="Snip35 home">
+      <a class="brand" href="./" aria-label="Frayge home">
         <img
           class="brand-icon"
           src="./assets/app-icon.png"
           data-icon-light="./assets/app-icon.png"
           data-icon-dark="./assets/app-icon-dark.png"
-          alt="Snip35 app icon"
+          alt="Frayge app icon"
           width="34"
           height="34"
         />
-        <img class="brand-wordmark" src="./assets/wordmark.png" alt="Snip35" height="22" />
+        <img class="brand-wordmark" src="./assets/wordmark.png" data-icon-light="./assets/wordmark.png" data-icon-dark="./assets/wordmark-dark.png" alt="Frayge" height="22" />
       </a>
 
       <nav class="nav" aria-label="Primary">
@@ -63,7 +63,7 @@
 
       <div class="nav-actions">
         <button id="themeToggle" class="theme-btn" type="button" aria-label="Toggle studio theme"></button>
-        <a class="btn btn-primary btn-sm nav-cta" href="#download">Get Snip35</a>
+        <a class="btn btn-primary btn-sm nav-cta" href="#download">Get Frayge</a>
       </div>
     </div>
   </header>
@@ -86,15 +86,15 @@
 
       <!-- Interactive Split Before/After Hero Stage -->
       <div class="stage-wrap">
-        <div class="stage-card has-compare" id="heroStage" aria-label="Interactive before and after preview of Snip35 collage looks">
-          <img class="stage-img active" data-look="pop" src="./assets/hero-pop-portrait.jpg" alt="Snip35 Pop Art portrait collage hand-cut from real glossy editorial spreads" />
-          <img class="stage-img" data-look="diag" src="./assets/hero-diagonal.jpg" alt="Snip35 Diagonal Rip art frame revealing a 35mm portrait through torn print" />
-          <img class="stage-img" data-look="torn" src="./assets/hero-torn-edge.jpg" alt="Snip35 Torn Edge subject cutout with hand-torn paper deckle and cutout editorial lettering" />
-          <img class="stage-img" data-look="ripped" src="./assets/hero-ripped-up.jpg" alt="Snip35 Organic Ripped Up multi-shard collage framing a golden retriever" />
+        <div class="stage-card has-compare" id="heroStage" aria-label="Interactive before and after preview of Frayge collage looks">
+          <img class="stage-img active" data-look="pop" src="./assets/hero-pop-portrait.jpg" alt="Frayge Pop Art fine-art portrait collage hand-cut from real glossy editorial spreads" />
+          <img class="stage-img" data-look="diag" src="./assets/hero-diagonal.jpg" alt="Frayge Diagonal Rip art frame revealing a 35mm portrait through torn print" />
+          <img class="stage-img" data-look="torn" src="./assets/hero-torn-edge.jpg" alt="Frayge Torn Edge birthday portrait cutout with hand-torn paper deckle and cutout editorial lettering" />
+          <img class="stage-img" data-look="ripped" src="./assets/hero-ripped-up.jpg" alt="Frayge Organic Ripped Up multi-shard collage framing a golden retriever" />
 
-          <img class="before-layer" id="beforeLayer" src="./assets/hero-torn-orig.jpg" alt="Original iPhone photograph before Snip35 paper cutting" />
+          <img class="before-layer" id="beforeLayer" src="./assets/hero-tulip-orig.jpg" alt="Original fine-art portrait before Frayge paper cutting" />
 
-          <div class="stage-divider active" id="stageDivider" role="slider" tabindex="0" aria-label="Compare original photo and Snip35 collage" aria-valuemin="0" aria-valuemax="100" aria-valuenow="38">
+          <div class="stage-divider active" id="stageDivider" role="slider" tabindex="0" aria-label="Compare original photo and Frayge collage" aria-valuemin="0" aria-valuemax="100" aria-valuenow="38">
             <span class="stage-handle" aria-hidden="true">
               <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round">
                 <path d="M9 18l-6-6 6-6" />
@@ -129,7 +129,7 @@
             <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
               <path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.81-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M15.96 6.33c.67-.81 1.12-1.94 1-3.08-.96.04-2.13.64-2.82 1.45-.61.7-1.14 1.86-1 2.98 1.07.08 2.16-.54 2.82-1.35z"/>
             </svg>
-            <span>Get Snip35 for iPhone</span>
+            <span>Get Frayge for iPhone</span>
           </a>
           <a class="btn btn-secondary hero-secondary" href="#studio">See Inside the Studio</a>
         </div>
@@ -171,7 +171,7 @@
           <article class="studio-item">
             <div class="device-frame">
               <div class="device-screen">
-                <img src="./assets/ui-pop-art.jpg" alt="Snip35 Pop Art studio screen on iPhone" loading="lazy" />
+                <img src="./assets/ui-pop-art.jpg" alt="Frayge Pop Art studio screen on iPhone" loading="lazy" />
               </div>
             </div>
             <div class="studio-meta">
@@ -184,7 +184,7 @@
           <article class="studio-item">
             <div class="device-frame">
               <div class="device-screen">
-                <img src="./assets/ui-ripped-up.jpg" alt="Snip35 Ripped Up organic frame screen on iPhone" loading="lazy" />
+                <img src="./assets/ui-ripped-up.jpg" alt="Frayge Ripped Up organic frame screen on iPhone" loading="lazy" />
               </div>
             </div>
             <div class="studio-meta">
@@ -197,7 +197,7 @@
           <article class="studio-item">
             <div class="device-frame">
               <div class="device-screen">
-                <img src="./assets/ui-recut.jpg" alt="Snip35 Resnip and Sharpen brush workbench on iPhone" loading="lazy" />
+                <img src="./assets/ui-recut.jpg" alt="Frayge Resnip and Sharpen brush workbench on iPhone" loading="lazy" />
               </div>
             </div>
             <div class="studio-meta">
@@ -210,7 +210,7 @@
           <article class="studio-item">
             <div class="device-frame">
               <div class="device-screen">
-                <img src="./assets/ui-roll-text.jpg" alt="Snip35 curved editorial Roll Text screen on iPhone" loading="lazy" />
+                <img src="./assets/ui-roll-text.jpg" alt="Frayge curved editorial Roll Text screen on iPhone" loading="lazy" />
               </div>
             </div>
             <div class="studio-meta">
@@ -241,7 +241,7 @@
         </div>
 
         <div class="spreads-frame">
-          <img src="./assets/spreads-modern.jpg" alt="Six glossy Modern Editorial spreads bundled in Snip35: Atelier, Solaris, Riviera, Noir Studio, Chroma Pop, and Studio 35 Cobalt" loading="lazy" />
+          <img src="./assets/spreads-modern.jpg" alt="Six glossy Modern Editorial spreads bundled in Frayge: Atelier, Solaris, Riviera, Noir Studio, Chroma Pop, and Studio Cobalt" />
         </div>
 
         <div class="packs-grid">
@@ -333,7 +333,7 @@
         <div class="pricing-grid">
           <div class="price-card">
             <div class="price-header">
-              <h3>Snip35 Free</h3>
+              <h3>Frayge Free</h3>
               <span class="price-tag">Free Forever</span>
             </div>
             <p class="price-amount"><strong>$0</strong> to explore &amp; cut</p>
@@ -341,7 +341,7 @@
               <li><span class="check">&#10003;</span><span>Unlimited collage cutting across Pop Art, Subject Pop &amp; Art Frame</span></li>
               <li><span class="check">&#10003;</span><span>3 starter Modern Editorial spreads + Typography pack &amp; Cotton White board</span></li>
               <li><span class="check">&#10003;</span><span>Import up to 2 of your own photographed magazine pages</span></li>
-              <li><span class="check">&#10003;</span><span>2.8K print exports &amp; 5-second 60fps reels (with subtle snip³⁵ mark)</span></li>
+              <li><span class="check">&#10003;</span><span>2.8K print exports &amp; 5-second 60fps reels (with subtle frayge mark)</span></li>
               <li><span class="check">&#10003;</span><span>Instant Studio Samples ready to test on launch</span></li>
             </ul>
             <p class="price-note">No account or payment card required to get started.</p>
@@ -349,7 +349,7 @@
 
           <div class="price-card pro-card">
             <div class="price-header">
-              <h3>Snip35 Pro</h3>
+              <h3>Frayge Pro</h3>
               <span class="price-tag">7-Day Free Trial</span>
             </div>
             <p class="price-amount"><strong>$9.99</strong>/yr &nbsp;·&nbsp; or <strong>$19.99</strong> lifetime</p>
@@ -377,7 +377,7 @@
         src="./assets/app-icon.png"
         data-icon-light="./assets/app-icon.png"
         data-icon-dark="./assets/app-icon-dark.png"
-        alt="Snip35 app icon"
+        alt="Frayge app icon"
         width="82"
         height="82"
       />
@@ -387,42 +387,42 @@
       </div>
       <h2>Bring your photos.<br />We brought the print.</h2>
       <p>
-        Snip35 v1.0 has been submitted to the App Store. Free to download on launch—with Metal paper craft, 18 hi-res spreads, and zero account required.
+        Frayge v1.0 has been submitted to the App Store. Free to download on launch—with Metal paper craft, 18 hi-res spreads, and zero account required.
       </p>
       <div class="closing-actions">
-        <a class="btn btn-primary" href="mailto:support@snip35.com?subject=Notify%20me%20when%20Snip35%20launches">Notify Me on Launch</a>
+        <a class="btn btn-primary" href="mailto:support@frayge.com?subject=Notify%20me%20when%20Frayge%20launches">Notify Me on Launch</a>
         <a class="btn btn-secondary" href="./support/">Support &amp; FAQ</a>
       </div>
     </section>
   </main>
 
   <!-- Sticky Mobile Conversion Bar (shows only when hero CTA & closing CTA are off-screen) -->
-  <aside class="sticky-cta" id="stickyCta" aria-label="Get Snip35">
+  <aside class="sticky-cta" id="stickyCta" aria-label="Get Frayge">
     <div class="sticky-cta-brand">
       <img
         src="./assets/app-icon.png"
         data-icon-light="./assets/app-icon.png"
         data-icon-dark="./assets/app-icon-dark.png"
-        alt="Snip35 icon"
+        alt="Frayge icon"
         width="34"
         height="34"
       />
       <div>
-        <strong>Snip35</strong>
+        <strong>Frayge</strong>
         <span>Free on iPhone</span>
       </div>
     </div>
-    <a class="btn btn-primary btn-sm" href="#download">Get Snip35</a>
+    <a class="btn btn-primary btn-sm" href="#download">Get Frayge</a>
   </aside>
 
   <footer class="footer">
     <div class="wrap footer-inner">
-      <span>&copy; 2026 Snip35 &middot; Victor Soto</span>
+      <span>&copy; 2026 Frayge &middot; Victor Soto</span>
       <div class="footer-links">
         <a href="./privacy/">Privacy Policy</a>
         <a href="./terms/">Terms of Use</a>
         <a href="./support/">Support</a>
-        <a href="mailto:support@snip35.com">support@snip35.com</a>
+        <a href="mailto:support@frayge.com">support@frayge.com</a>
       </div>
     </div>
   </footer>

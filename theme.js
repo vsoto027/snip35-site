@@ -1,5 +1,5 @@
 (() => {
-  const KEY = "snip35-theme";
+  const KEY = "frayge-theme";
   const SVG_NS = "http://www.w3.org/2000/svg";
   const root = document.documentElement;
   const initial = localStorage.getItem(KEY) || "light";
